@@ -1,0 +1,75 @@
+.track-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.track-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 600px;
+}
+
+.track-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.track-form input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--input-bg);
+  color: var(--text-color);
+}
+
+.track-form button {
+  padding: 0.8rem 1.5rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.track-form button:hover {
+  background: var(--primary-hover);
+}
+
+.report-details {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.report-details p {
+  margin-bottom: 0.5rem;
+}
+
+.status-history {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.status-history li {
+  padding: 1rem;
+  background: var(--bg-color);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.update-date {
+  font-size: 0.85rem;
+  color: gray;
+  margin-bottom: 0.5rem;
+  display: block;
+}

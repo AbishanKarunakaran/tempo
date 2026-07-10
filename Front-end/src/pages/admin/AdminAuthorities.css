@@ -1,0 +1,338 @@
+/* Shared CSS for PendingAuthorities and AuthorityManagement */
+.admin-toolbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #95a5a6;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.filter-icon {
+  color: #95a5a6;
+}
+
+.filter-box select {
+  padding: 10px 5px;
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Grid View for Pending */
+.authorities-grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.authority-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+}
+
+.authority-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.authority-card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.authority-card-body p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.authority-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+}
+
+.authority-card-actions button,
+.authority-card-actions a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-view { background-color: #f1f5f9; color: #475569; }
+.btn-view:hover { background-color: #e2e8f0; }
+
+.btn-approve { background-color: #10b981; color: white; }
+.btn-approve:hover { background-color: #059669; }
+
+.btn-reject { background-color: #ef4444; color: white; }
+.btn-reject:hover { background-color: #dc2626; }
+
+/* Badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-pending { background-color: #fef3c7; color: #d97706; border: 1px solid #fde68a; }
+.badge-approved { background-color: #d1fae5; color: #059669; border: 1px solid #a7f3d0; }
+.badge-rejected { background-color: #fee2e2; color: #dc2626; border: 1px solid #fecaca; }
+.badge-suspended { background-color: #f3f4f6; color: #4b5563; border: 1px solid #e5e7eb; }
+
+/* Table View */
+.admin-table-container {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-table th {
+  background-color: rgba(0,0,0,0.02);
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.font-medium { font-weight: 500; }
+.small-text { font-size: 0.8rem; }
+.text-gray { color: #64748b; }
+
+.action-buttons-inline {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.btn-view-icon { background-color: #f1f5f9; color: #3b82f6; }
+.btn-view-icon:hover { background-color: #e0e7ff; }
+
+.btn-view-cert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #f1f5f9;
+  color: #3b82f6;
+  white-space: nowrap;
+}
+.btn-view-cert:hover { background-color: #e0e7ff; }
+
+.btn-suspend-icon { background-color: #fffbeb; color: #d97706; }
+.btn-suspend-icon:hover { background-color: #fef3c7; }
+
+.btn-reactivate-icon { background-color: #ecfdf5; color: #059669; }
+.btn-reactivate-icon:hover { background-color: #d1fae5; }
+
+.btn-delete-icon { background-color: #fef2f2; color: #ef4444; }
+.btn-delete-icon:hover { background-color: #fee2e2; }
+
+/* Modal */
+.admin-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.admin-modal {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-modal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.admin-modal select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-cancel {
+  background-color: #e2e8f0;
+  color: #475569;
+}
+
+.btn-confirm-reject {
+  background-color: #ef4444;
+  color: white;
+}
+
+.admin-empty-state {
+  text-align: center;
+  padding: 50px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Sections for Authority Management */
+.authorities-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.authority-section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: rgba(0,0,0,0.02);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-header:hover {
+  background: rgba(0,0,0,0.04);
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-title-wrapper h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.section-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

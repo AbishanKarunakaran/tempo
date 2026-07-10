@@ -1,0 +1,224 @@
+.authority-home-container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding-bottom: 4rem;
+}
+
+.authority-hero-section {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: white;
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+[data-theme='dark'] .authority-hero-section {
+  background: linear-gradient(135deg, #4c1d95 0%, #3b0764 100%);
+}
+
+.authority-hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.authority-hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-hero-authority {
+  display: inline-block;
+  background: white;
+  color: #7c3aed;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hero-authority:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.authority-content-wrapper {
+  max-width: 1200px;
+  margin: -3rem auto 3rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  z-index: 10;
+}
+
+.authority-login-card {
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.authority-login-card h2 {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.authority-login-card p {
+  color: #64748b;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+[data-theme='dark'] .authority-login-card p {
+  color: #94a3b8;
+}
+
+.btn-feature-authority {
+  display: inline-block;
+  background: #8b5cf6;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-feature-authority:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.authority-workflow-section {
+  text-align: center;
+}
+
+.authority-workflow-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.auth-timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.auth-timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.auth-step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-timeline-step p {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.auth-timeline-connector {
+  font-size: 1.5rem;
+  color: #a78bfa;
+}
+
+@media (min-width: 992px) {
+  .auth-timeline-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .auth-timeline-connector {
+    transform: rotate(-90deg);
+    margin-top: 2rem;
+  }
+  .auth-timeline-step {
+    max-width: 150px;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  .auth-timeline-step p {
+    font-size: 0.9rem;
+  }
+}
+
+.responsibilities-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.responsibilities-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.resp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.resp-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+[data-theme='dark'] .resp-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.resp-card:hover {
+  transform: translateY(-5px);
+}
+
+.resp-icon {
+  font-size: 2.5rem;
+  background: #f3e8ff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+[data-theme='dark'] .resp-icon {
+  background: rgba(139, 92, 246, 0.2);
+}
+
+.resp-card p {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  text-align: left;
+}

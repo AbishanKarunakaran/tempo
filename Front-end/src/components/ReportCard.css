@@ -1,0 +1,221 @@
+.report-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 50rem;
+  /* Further increased spacing between cards for better readability */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-left: 8px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Violation Type Specific Coloring (Full Card) */
+.report-card.card-illegal-waste-disposal {
+  background-color: #fff1dc;
+  /* More vivid Orange tint */
+  border-left-color: #f39c12;
+}
+
+.report-card.card-air-pollution {
+  background-color: #f0f0f0;
+  /* More vivid Grey tint */
+  border-left-color: #95a5a6;
+}
+
+.report-card.card-water-pollution {
+  background-color: #d6ebff;
+  /* More vivid Light Blue tint */
+  border-left-color: #3498db;
+}
+
+.report-card.card-deforestation {
+  background-color: #dafbe0;
+  /* More vivid Light Green tint */
+  border-left-color: #27ae60;
+}
+
+.report-card.card-noise-pollution {
+  background-color: #fffbcf;
+  /* More vivid Yellow tint */
+  border-left-color: #f1c40f;
+}
+
+.report-card.card-wildlife-poaching {
+  background-color: #ffe4e4;
+  border-left-color: #e74c3c;
+}
+
+.report-card.card-chemical-waste {
+  background-color: #f0e4ff;
+  border-left-color: #9b59b6;
+}
+
+.report-card.card-illegal-landfill {
+  background-color: #eae7e4;
+  border-left-color: #7f8c8d;
+}
+
+.report-card.card-other {
+  background-color: #f8f8f8;
+  border-left-color: #bdc3c7;
+}
+
+/* Ensure details section is transparent or subtle so card color shows through */
+.report-card .report-details {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.report-title {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.report-media {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.media-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.media-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-thumb {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #34495e;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.report-body {
+  margin-bottom: 1rem;
+}
+
+.report-description {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+
+.detail-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #2c3e50;
+  min-width: 120px;
+}
+
+.detail-value {
+  color: #555;
+}
+.detail-value a {
+  color:blue;
+}
+.detail-value a:hover {
+  color:red;
+  text-decoration: underline;
+}
+.report-actions {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.status-select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 0.5rem 1rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+/* Image Modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+}
