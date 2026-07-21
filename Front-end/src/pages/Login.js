@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import { login, forgotPassword, resetPassword, register } from "../api";
+import { login, forgotPassword, resetPassword } from "../api";
 import "./Login.css";
 
 const SRI_LANKAN_DISTRICTS = [
