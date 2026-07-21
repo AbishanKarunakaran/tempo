@@ -4,13 +4,13 @@ import Navbar from "../components/Navbar";
 import { login, forgotPassword, resetPassword } from "../api";
 import "./Login.css";
 
-const SRI_LANKAN_DISTRICTS = [
-  "Ampara", "Anuradhapura", "Badulla", "Batticaloa", "Colombo", 
-  "Galle", "Gampaha", "Hambantota", "Jaffna", "Kalutara", 
-  "Kandy", "Kegalle", "Kilinochchi", "Kurunegala", "Mannar", 
-  "Matale", "Matara", "Moneragala", "Mullaitivu", "Nuwara Eliya", 
-  "Polonnaruwa", "Puttalam", "Ratnapura", "Trincomalee", "Vavuniya"
-];
+// const SRI_LANKAN_DISTRICTS = [
+//   "Ampara", "Anuradhapura", "Badulla", "Batticaloa", "Colombo", 
+//   "Galle", "Gampaha", "Hambantota", "Jaffna", "Kalutara", 
+//   "Kandy", "Kegalle", "Kilinochchi", "Kurunegala", "Mannar", 
+//   "Matale", "Matara", "Moneragala", "Mullaitivu", "Nuwara Eliya", 
+//   "Polonnaruwa", "Puttalam", "Ratnapura", "Trincomalee", "Vavuniya"
+// ];
 
 const Login = () => {
   const navigate = useNavigate();
