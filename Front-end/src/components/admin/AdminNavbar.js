@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
-import { FiSun, FiMoon, FiLogOut, FiMenu, FiX, FiUsers, FiFileText, FiPieChart, FiHome, FiGrid } from 'react-icons/fi';
+import { FiSun, FiMoon, FiLogOut, FiMenu, FiX, FiUsers, FiHome, FiGrid } from 'react-icons/fi';
 import './AdminNavbar.css';
 
 const AdminNavbar = () => {
