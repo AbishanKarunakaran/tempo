@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with base URL
 const API = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://tempo-production-097c.up.railway.app/",
+  baseURL: process.env.REACT_APP_API_URL || "https://tempo-production-097c.up.railway.app/api",
 });
 
 // Add token to requests if available
